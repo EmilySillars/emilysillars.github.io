@@ -2,7 +2,7 @@
 * Author: Emily Sillars
 * Date: 4/19/18
 * Assignment #7: Framework
-* Description: Homepage in html using bootstrap classes.
+* Description: Broccoli-themed fake ad page in html using bootstrap classes.
 */ -->
 <!doctype html>
 <html lang="en">
@@ -17,13 +17,12 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!--custom style sheets-->
-  <link href="index.css" type="text/css" rel="stylesheet" />
+  <link href="broccoli.css" type="text/css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Concert+One|Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 </head>
 
 <body>
-  <div id = "rainDrops"><!--<p class = "fall">.</p>--></div>
   <!-- NAVIAGATION ------------------------------------------------------------------------------------------------------------------------------>
   <!--Navbar-->
   <nav class="navbar navbar-light navbar-1 white">
@@ -52,9 +51,12 @@
       <!-- Links -->
       <ul class="navbar-nav mr-auto">
         <!-- These links disappear at desktop size -->
-        <a class="nav-item center tempTextLink" href="#">Comics</a>
-        <a class="nav-item center tempTextLink" href="#">Multimedia</a>
-        <a class="navLink nav-item center tempTextLink" href="#">About</a>
+        <a class="nav-item center tempTextLink" href="#">
+            Comics</a>
+        <a class="nav-item center tempTextLink" href="#">
+            Multimedia</a>
+        <a class="nav-item center tempTextLink" href="#">
+            About</a>
         <!-- These links remain at all sizes -->
         <li class="nav-item active center">
           <a id="dropDownMenuTitle" class="nav-link" href="#">Hamburger Menu!<span class="sr-only">(current)</span></a>
@@ -76,58 +78,33 @@
   <!--/.Navbar-->
   <!-- END  OF NAVIAGATION ------------------------------------------------------------------------------------------------------------------------------>
   <!-- PAGE CONTENT --------------------------------------------------------------------------------------------------------------------------->
-  <div class="container-fluid">
+  <div class="container-fluid page">
+    <div class="container carousel">
+</div>
+  <div class = "container-fluid">
     <div class="row">
       <div class="col-sm">
-        <!--Above the fold content------------------------------------------------------->
-        <div id="focusImage" class="align-left">
-          <img id="focusImageImage" src="png_images/streetLamp300.png" srcset="png_images/streetLamp600.png 2x" alt="Two characters under a streetlight." />
+        <!-- Above the fold image here -->
+        <div id="focusImage" class="align-left content">
+          <img id="focusImageImage" src="png_images/broccoli_comic.png"
+          srcset="png_images/broccoli_comic.png 2x" alt="A comic about a broccoli and tomato." />
         </div>
       </div>
-      <div class="col-sm">
-        <!--Current Project content------------------------------------------------------->
-        <div id="currentProject" class="align-left">
-          <img id="currentProjectImage" src="png_images/october_valentine_300.png" srcset="png_images/october_valentine_600.png 2x" alt="an orange water bottle on a desk." />
-          <a href="octoberValentine.html">
-            <p><strong>A dreamy, platformer-style videogame!</strong></p>
-          </a>
-          <i>October Valentine links to new page!</i>
-        </div>
+    <!-- END OF Above the fold image  -->
+    <div class="col-sm">
+      <!--Fake ad------------------------------------------------------->
+      <div id="tridentAd" class="card content">
+        <h5 class="card-title">Broccoli's Trident: ON SALE NOW!</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Sharp, refurbished, and <strong>100% off!</strong></h6>
+        <p class="card-text">All proceeds go to Angry Tomato Inc.</p>
+        <a href="png_images/trident.png" class = "card-link">Get Broccoli's Trident.</a>
       </div>
-      <div class="col-sm">
-        <!--Fake Ad (contains 3 peices, plus one hidden peice)------------------------------------------------------->
-        <div id= "tomatoAd" class="content">
-          <div><img id="angryAngryTomato" class="align-left" src="invisible.png"
-            srcset="png_images/invisible.png 2x" alt="An invisible tomato." /></div>
-          <div id="ad1" class="align-left">
-            <img id="pickOneImage" class="align-left" src="png_images/PickOne300.png" srcset="png_images/PickOne600.png 2x" alt="A broccoli" />
-          </div>
-          <div id="ad2" class="align-left">
-            <a id="broccoliLink" class="align-left" href="broccoli.html">
-              <img id="broccoliImage" src="png_images/broccoli_plain_300.png" srcset="png_images/broccoli_plain_300.png 2x" alt="A broccoli" />
-              <img id="broccoliHooHooImage" src="png_images/broccoli_hooHoo300.png" srcset="png_images/broccoli_hooHoo300.png 2x" alt="A clicked broccoli" />
-        </div>
-        <div id="ad3" class = "align-left">
-          <a id="tomatoLink" class = "align-left" href="#tomatoAd">
-            <img id="tomatoImage" src="png_images/angryTomato_plain300.png" srcset="png_images/angryTomato_plain300.png 2x" alt="A tomato" />
-            <img id="tomatoHooHooImage" src="png_images/broccoli_hooHoo300.png" srcset="png_images/broccoli_hooHoo300.png 2x" alt="A clicked tomato" />
-          </a>
-        </div>
-          <i id="broccoliLinkText">Broccoli links to new page!</i>
-        </div>
-        <!-- end of Fake Ad------------------------------------------------------->
-        <!--Rain control box ------------------------------------------------------->
-        <div id = "rainContainer" class="content">
-          <div><b>RAIN?</b></div>
-          <div id = "rainBar" class="align-left">
-            <div id = "rainSlider" class = "slidLeft"></div>
-          </div>
-          <div class = "rainLabel align-left">Nope.</div>
-          <div class = "rainLabel align-right">Oh yeah.</div>
-        </div>
-        <!-- end of Rain control box------------------------------------------------------->
+      <!--End of fake ad-------------------------------------------------------------------------------------------------------------->
+  </div>
       </div>
-    </div>
+
+      </div>
+  </div>
   </div>
   <!--  FOOTER   ----------------------------------------------------->
   <div class="navbar navbar-light footer">
@@ -147,7 +124,5 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!--^make sure the links ARE IN THIS PARTICULAR ORDER! OTHERWISE, will get errors! -->
   </div>
-  <!--  <script type="text/javascript" src="pureJS.js"></script> -->
-    <script type="text/javascript" src="jquery.js"></script>
 </body>
 </html>

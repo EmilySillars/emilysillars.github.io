@@ -1,0 +1,367 @@
+/*
+* Author: Emily Sillars
+* Date: 4/19/18
+* Assignment #7: Framework
+* Description: This is a stylesheet created to style my frameowrk assignment's home page.
+* This stylesheet styles for mobile and desktop with one breakpoint at 600 pixels in width.
+* It also implements and modifies boot strap classes.
+*/
+
+/*******************************************************************************************************************************/
+
+/* GENERAL RULES                                                                                                               */
+
+/*******************************************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #7A3458;
+}
+/************************  Alignment classes  ******************************/
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+/***************************        Body      *************************************************/
+body {
+  background-color: white;
+}
+/************************************************  Header  ******************************************************************/
+.navbar{
+  background-color: lightblue;
+  font-size: 130%;
+}
+.BannerImage{
+  width: 232px;
+}
+/*************** navigation ***************/
+.navImage{
+  height: 25px;
+}
+/***********These nav bar links are only visible in desktop size ********/
+/****  (in mobile, they're accessible thru hamburger menu)***************/
+#comicsNav{
+  display:none;
+}
+#multimediaNav{
+  display:none;
+}
+#aboutNav{
+  display:none;
+}
+/*************** Rules for Swapping images of desktop naviation links on hover ***************/
+#comicsNav:hover{
+  background-image: url(png_images/comics_nav_underline300.png);
+}
+#comicsNav:active{
+  background-image: url(png_images/comics_nav_underline300.png);
+}
+#multimediaNav:hover{
+  background-image: url(png_images/multimedia_nav_underline600.png);
+}
+#multimediaNav:active{
+  background-image: url(png_images/multimedia_nav_underline600.png);
+}
+#aboutNav:hover{
+  background-image: url(png_images/about_nav_underlined_300.png);
+}
+#aboutNav:active{
+  background-image: url(png_images/about_nav_underlined_300.png);
+}
+/*************** General Navbar text link rules ***************/
+.navLink:visited {
+  color: #7A3458;
+}
+.navLink:active {
+  color: #491F35;
+  text-decoration: none;
+}
+/********** Hamburger Menu *******************************************************************/
+/*************** At mobile breakpoint, position of Burger toggler moves, *******/
+/***so two there are two different togglers that are never displayed at the same time. *******/
+#burgerDesktop{
+  display:none; /**not displayed for mobile**/
+}
+#burgerMobile{
+  padding:0.25rem; /**displayed for mobile**/
+}
+/*************** Rules for burger icon, size etc. *******/
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('png_images/burger_expanded_color_300.png');
+}
+#burgerIcon{
+  width:34px;
+  height:34px;
+}
+.burgerDropDownIcon{
+width:30px;
+}
+/*************** Rules for Dropdown Menu content *******/
+#dropDownMenuTitle{
+  font-size: 110%;
+  font-family: 'Cabin Sketch', cursive;
+}
+a.dropdown-item{
+  font-size: 90%;
+  font-family: 'Lato', sans-serif;
+  color: #7A3458;
+  text-decoration: none;
+}
+.dropdown .btn{
+  padding: 0.2rem;
+}
+.dropdown .btn-secondary .dropdown-toggle {
+  background-color: #fff;
+}
+.tempTextLink{
+  display:block;
+  text-decoration: none;
+  color: #7A3458;
+}
+/*************** Hamburger menu text link rules ***************/
+.tempText:visited{
+    color: #7A3458;
+    text-decoration: none;
+}
+.tempTextLink:active{
+  color: #7A3458;
+  text-decoration: none;
+}
+/************************************************  END OF Header + Navigation  ******************************************************************/
+
+/*************************************************** PAGE CONTENT*******************************************************************************/
+/*************Current Project content*************************/
+#currentProject {
+  margin: 2%;
+  padding: 1%;
+  width: 96%;
+  background-color: #f7f0e8;
+  text-align: center;
+  font-size: 100%;
+}
+#currentProjectImage {
+  width: 100%;
+}
+/*************Above the fold content*************************/
+#focusImage {
+  margin: 2%;
+  padding: 1%;
+  width: 96%;
+  background-color: white;
+  text-align: center;
+  font-size: 50%;
+}
+#focusImageImage {
+  width: 100%;
+}
+/*************General content (updates, Fake ads etc.)*************************/
+.content {
+  margin: 2%;
+  padding: 1%;
+  width: 96%;
+  background-color: lightblue;
+  font-size: 90%;
+  overflow: auto;
+  float:left;
+  text-align: center;
+}
+/********************Rules for the 3 parts of the Fake Ad************************************************/
+#ad1 {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+  padding: 1%;
+  width: 96%;
+  background-color: lightblue;
+
+  overflow: auto;
+}
+#ad2 {
+  margin-left: 2%;
+  margin-right: 1%;
+  padding: 1%;
+  width: 47.5%;
+  background-color: lightblue;
+
+  overflow: auto;
+}
+#ad3 {
+  margin-right: 2%;
+  margin-left: 0;
+  padding: 1%;
+  width: 47.5%;
+  background-color: lightblue;
+  overflow: auto;
+  float: right;
+}
+/*******************Images in Fake Ad****************************/
+#tomatoImage {
+  width: 100%;
+}
+#tomatoHooHooImage {
+  width: 100%;
+  display: block;
+  visibility: hidden;
+}
+#broccoliImage {
+  width: 100%;
+}
+#broccoliHooHooImage {
+  width: 100%;
+  display: block;
+  visibility: hidden;
+}
+#pickOneImage {
+  width: 98%;
+}
+#angryAngryTomato{
+  width: 100%;
+}
+/*******************Link rules inside Fake Ad****************************/
+#tomatoLink {
+  display: block;
+}
+#broccoliLink {
+  display: block;
+}
+#broccoliLink:link #broccoliHooHooImage {
+  visibility: hidden;
+}
+#broccoliLink:active #broccoliHooHooImage {
+  visibility: visible;
+}
+#broccoliLink:hover #broccoliHooHooImage {
+  visibility: visible;
+}
+#tomatoLink:link #tomatoHooHooImage {
+  visibility: hidden;
+}
+#tomatoLink:active #tomatoHooHooImage {
+  visibility: visible;
+}
+#tomatoLink:hover #tomatoHooHooImage {
+  visibility: visible;
+}
+/********************* Rain Button Rules **************************************/
+.drop{
+  /*position drops above all other elements on page.*/
+  position: absolute;
+  z-index: 9;
+  /*position outside window to start*/
+  top: -1%;
+  left: -1%;
+  right: 0;
+  bottom: 0;
+  /*size of drop*/
+  width: 6%;
+  height: 10%;
+}
+.fall{
+    top: 1%;
+    left: 1%;
+}
+#rainContainer{
+  padding: 2%;
+  height: 90px;
+}
+.rainLabel{
+  margin-top:1%;
+  margin-bottom:1%;
+  display: inline-block;
+}
+#rainBar{
+  width: 100%;
+  height: 40%;
+  background-color: lightyellow;
+}
+#rainSlider{
+  width: 20%;
+  height: 110%;
+  background-color: #2c5fb2;
+}
+.slidRight{
+  position: relative;
+  top: -5%;
+  left: 78%;
+}
+.slidLeft{
+  position: relative;
+  top: -5%;
+  left: 2%;
+}
+/*********************** End of Rain Button Rules ************************************/
+/***************  FOOTER   *****************/
+
+footer {
+  /* Apperance */
+  text-align: center;
+  margin:auto;
+}
+#copyright {
+  font-size: 30%;
+  display:block;
+}
+#mailLink {
+display:block;
+  font-size: 30%;
+}
+#copyrightImage {
+  height: 30px;
+}
+#mailLinkImage {
+  height: 30px;
+}
+
+/***********MEDIA QUERIES FOR DESKTOP DESIGN (BREAK POINT AT 600 PIXELS)**************/
+@media (min-width: 600px) {
+  .BannerImage{
+    width: 300px;
+  }
+  .navImage{
+    height: 35px;
+  }
+  .tempTextLink{
+    display:none; /*since nav-bar elts visible, text links disappear from dropdown menu.*/
+  }
+  #burgerMobile{
+    display:none; /*mobile burger icon not visible in desktop*/
+  }
+  #burgerDesktop{
+    display:inline;
+  }
+  /******************Rules for nav-bar elts that only appear in desktop version********************************/
+  #comicsNav{
+    display: inline;
+    background-image: url(png_images/comics_nav_plain_300.png);
+    background-position: center;
+    background-size: 130px;
+    background-repeat: no-repeat;
+  }
+  #multimediaNav{
+    display: inline;
+    background-image: url(png_images/multimedia_nav_plain600.png);
+    background-position: center;
+    background-size: 160px;
+    background-repeat: no-repeat;
+
+  }
+  #aboutNav{
+    display: inline;
+    background-image: url(png_images/about_nav_plain_300.png);
+    background-position: center;
+    background-size: 130px;
+    background-repeat: no-repeat;
+  }
+
+}/*end of media query*/
