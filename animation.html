@@ -6,6 +6,7 @@
 */ -->
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
@@ -17,13 +18,15 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!--custom style sheets-->
-  <link href="index.css" type="text/css" rel="stylesheet" />
+  <link href="animation.css" type="text/css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Concert+One|Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 </head>
 
 <body>
-  <div id = "rainDrops"><!--<p class = "fall">.</p>--></div>
+  <div id="rainDrops">
+    <!--<p class = "fall">.</p>-->
+  </div>
   <!-- NAVIAGATION ------------------------------------------------------------------------------------------------------------------------------>
   <!--Navbar-->
   <nav class="navbar navbar-light navbar-1 white">
@@ -77,85 +80,52 @@
   <!-- END  OF NAVIAGATION ------------------------------------------------------------------------------------------------------------------------------>
   <!-- PAGE CONTENT --------------------------------------------------------------------------------------------------------------------------->
   <div class="container-fluid">
+    <div id="title">
+      <strong>These are some animated sprites I'm working on for October Valentine!</strong>
+    </div>
     <div class="row">
       <div class="col-sm">
         <!--Above the fold content------------------------------------------------------->
-        <div id="focusImage" class="align-left">
-          <img id="focusImageImage" src="png_images/streetLamp300.png" srcset="png_images/streetLamp600.png 2x" alt="Two characters under a streetlight." />
+        <div id="animationCol1"class = "content" >
+          <img id = "girlForward" class="align-left" src="gif_images/girl_forward.gif" alt="girl walking forward." />
+          <img id = "girlRight" class="align-left" src="gif_images/girl_right.gif" alt="girl walking right." />
         </div>
-      </div>
-      <div class="col-sm">
-        <!--Current Project content------------------------------------------------------->
-        <div id="currentProject" class="align-left">
-          <img id="currentProjectImage" src="png_images/october_valentine_300.png" srcset="png_images/october_valentine_600.png 2x" alt="an orange water bottle on a desk." />
-          <a href="octoberValentine.html">
-            <p><strong>A dreamy, platformer-style videogame!</strong></p>
-          </a>
-          <i>October Valentine links to new page!</i>
-        </div>
-      </div>
-      <div class="col-sm">
-        <!--Fake Ad (contains 3 peices, plus one hidden peice)------------------------------------------------------->
-        <div id= "tomatoAd" class="content">
-          <div><img id="angryAngryTomato" class="align-left" src="invisible.png"
-            srcset="png_images/invisible.png 2x" alt="An invisible tomato." /></div>
-          <div id="ad1" class="align-left">
-            <img id="pickOneImage" class="align-left" src="png_images/PickOne300.png" srcset="png_images/PickOne600.png 2x" alt="A broccoli" />
+        <div class="col-sm">
+          <!--Current Project content------------------------------------------------------->
+          <div id="animationCol2" class = "content">
+            <img id = "forwardBlob" src="gif_images/blob_forward.gif" alt="orange blob walking forward." />
           </div>
-          <div id="ad2" class="align-left">
-            <a id="broccoliLink" class="align-left" href="broccoli.html">
-              <img id="broccoliImage" src="png_images/broccoli_plain_300.png" srcset="png_images/broccoli_plain_300.png 2x" alt="A broccoli" />
-              <img id="broccoliHooHooImage" src="png_images/broccoli_hooHoo300.png" srcset="png_images/broccoli_hooHoo300.png 2x" alt="A clicked broccoli" />
-        </div>
-        <div id="ad3" class = "align-left">
-          <a id="tomatoLink" class = "align-left" href="#tomatoAd">
-            <img id="tomatoImage" src="png_images/angryTomato_plain300.png" srcset="png_images/angryTomato_plain300.png 2x" alt="A tomato" />
-            <img id="tomatoHooHooImage" src="png_images/broccoli_hooHoo300.png" srcset="png_images/broccoli_hooHoo300.png 2x" alt="A clicked tomato" />
-          </a>
-        </div>
-          <i id="broccoliLinkText">Broccoli links to new page!</i>
-        </div>
-        <!-- end of Fake Ad------------------------------------------------------->
-        <!--Rain control box ------------------------------------------------------->
-        <div id = "rainContainer" class="content">
-          <div><b>RAIN?</b></div>
-          <div id = "rainBar" class="align-left">
-            <div id = "rainSlider" class = "slidLeft"></div>
+          <div class="col-sm">
+            <!--Fake Ad (contains 3 peices, plus one hidden peice)------------------------------------------------------->
+            <div id="animationCol1" class = "content">
+              <img class="align-left half" src="gif_images/blob_backward.gif" alt="orange blob walking backwards." />
+              <img class="align-left half" src="gif_images/blob_right.gif" alt="orange blob walking right." />
+            </div>
+            <!-- end of Animation Ad------------------------------------------------------->
           </div>
-          <div class = "rainLabel align-left">Nope.</div>
-          <div class = "rainLabel align-right">Oh yeah.</div>
         </div>
-        <!-- end of Rain control box------------------------------------------------------->
-        <!--Animation Ad Link ------------------------------------------------------->
-        <div id= "animationAd" class="content">
-          <div>
-            <a href="animation.html" class = "navLink">
-              <p>Animated Sprites in Progress!</p>
-            </a>
-        </div>
-        <!-- end of Animation Ad------------------------------------------------------->
       </div>
     </div>
-  </div>
-  <!--  FOOTER   ----------------------------------------------------->
-  <div class="navbar navbar-light footer">
-    <!-- Content here -->
-    <footer>
-      <div id="copyright" class="center"><img id="copyrightImage" src="png_images/copyright_footer300.png" srcset="png_images/copyright_footer300.png 2x" alt="copyright 2018 Emily Sillars." />
-      </div>
-      <a id="mailLink" class="center" style="color: #AD3975; " href="mailto:ems758@nyu.edu">
+    <!--  FOOTER   ----------------------------------------------------->
+    <div class="navbar navbar-light footer">
+      <!-- Content here -->
+      <footer>
+        <div id="copyright" class="center"><img id="copyrightImage" src="png_images/copyright_footer300.png" srcset="png_images/copyright_footer300.png 2x" alt="copyright 2018 Emily Sillars." />
+        </div>
+        <a id="mailLink" class="center" style="color: #AD3975; " href="mailto:ems758@nyu.edu">
     <img id = "mailLinkImage" src="png_images/sayHello_plain300.png" srcset="png_images/sayHello_plain300.png 2x" alt="Say Hello!" />
      </a>
-    </footer>
-  </div>
-  <!--  END OF FOOTER   ----------------------------------------------------->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!--^make sure the links ARE IN THIS PARTICULAR ORDER! OTHERWISE, will get errors! -->
+      </footer>
+    </div>
+    <!--  END OF FOOTER   ----------------------------------------------------->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--^make sure the links ARE IN THIS PARTICULAR ORDER! OTHERWISE, will get errors! -->
   </div>
   <!--  <script type="text/javascript" src="pureJS.js"></script> -->
-    <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
 </body>
+
 </html>

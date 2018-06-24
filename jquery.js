@@ -28,7 +28,7 @@ $(document).ready(function(){
     $ad2.hide();
     $ad3.hide();
     $text.hide();
-    $tomatoImg.attr("src", "png_images/angryAngryTomato72.png");
+    $tomatoImg.attr("src", "png_images/angryAngryTomato144.png");
     $tomatoImg.attr("srcset", "png_images/angryAngryTomato144.png 2x");
     $tomatoImg.attr("alt", "A very angry tomato.");
     $tomato.show();
@@ -132,7 +132,7 @@ $(document).ready(function(){
       if(y != 0){ //if y-pos is not the exact top of window,
         y *= (-1); //make y-pos negative so it is ABOVE the window.
       }
-      let x = Math.floor(Math.random()*100) //random integer between 0 and 100.
+      let x = Math.floor(Math.random()*95) //random integer between 0 and 100.
         $fall[i].style.top = y+"%";
         $fall[i].style.left = x+"%";
     }
@@ -142,7 +142,7 @@ $(document).ready(function(){
       if(y != 0){ //if y-pos is not the exact top of window,
         y *= (-1); //make y-pos negative so it is ABOVE the window.
       }
-      let x = Math.floor(Math.random()*100) //random integer between 0 and 100.
+      let x = Math.floor(Math.random()*95) //random integer between 0 and 100.
         $fall[i].style.top = y+"%";
         $fall[i].style.left = x+"%";
     }
@@ -178,7 +178,7 @@ $(document).ready(function(){
     for(let j =0; j< $fall.length; j++){
       let ypos = percenToInt($fall[j].style.top);
       ypos += speeds[j];
-      if(ypos >= 98){ //if the drop has reached the bottom of the window,
+      if(ypos >= 80){ //if the drop has reached the bottom of the window,
         //give the drop a new random speed.
         let sped = (Math.random()*3);
         if(sped <= 1){
@@ -189,7 +189,7 @@ $(document).ready(function(){
         }
         //give the drop a new random position above the window.
         $($fall[j]).css("top", ((-1)*(Math.floor(Math.random()*10)+20)+"%"));
-        $($fall[j]).css("left",(Math.floor(Math.random()*100)+"%"));
+        $($fall[j]).css("left",(Math.floor(Math.random()*95)+"%"));
       }
       else{
         $($fall[j]).css("top",ypos+"%" );
