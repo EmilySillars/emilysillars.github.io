@@ -179,6 +179,12 @@ a.dropdown-item{
 .half{
   width: 45%;
 }
+#blobBendForward{
+  width: 45%;
+}
+#blobBendBackward{
+  width: 55%;
+}
 #forwardBlob{
   width: 90%;
 }
