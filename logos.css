@@ -2,7 +2,7 @@
 * Author: Emily Sillars
 * Date: 4/4/18
 * Assignment #6: Responsive Web Design
-* Description: This is a stylesheet created to style my responsize web design assignment's comics gallery page.
+* Description: This is a stylesheet created to style my SSF logo versions.
 * This stylesheet styles for mobile and desktop with one breakpoint at 600 pixels in width..
 */
 
@@ -191,6 +191,14 @@ footer {
     margin-bottom: 2;
     padding: 2%;
     width: 30.3%;
+  }
+  .largeGirl{
+    margin-top: 2%;
+    margin-left: 0;
+    margin-right: 2%;
+    margin-bottom: 2;
+    padding: 2%;
+    width: 60.6%;
   }
   .comic:nth-child(3n+1){
     margin-top: 2%;
