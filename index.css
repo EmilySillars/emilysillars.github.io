@@ -253,6 +253,14 @@ a.dropdown-item{
 #tomatoLink:hover #tomatoHooHooImage {
   visibility: visible;
 }
+/****************************Animation Ad rules*******************************/
+.half{
+  width: 45%;
+}
+#animationAd{
+  font-size: 120%; 
+}
+/******************************************************************************/
 /********************* Rain Button Rules **************************************/
 .drop{
   /*position drops above all other elements on page.*/
