@@ -257,8 +257,13 @@ a.dropdown-item{
 .half{
   width: 45%;
 }
+#dogText{
+  font-size: 120;
+  width: 45%;
+}
 #animationAd{
-  font-size: 120%; 
+  padding: 5%;
+  font-size: 150%;
 }
 /******************************************************************************/
 /********************* Rain Button Rules **************************************/
