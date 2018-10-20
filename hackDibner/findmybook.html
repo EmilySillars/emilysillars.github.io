@@ -1,0 +1,78 @@
+<!--
+* Hack Dibner Project: Find My Book Webpage
+* Team: Dewey Decimals
+* Date: 10/19/18*
+* Author: Emily Sillars with edits/additions
+  by Lyanne LaLunio, Cindy Lee, and Andrew Lucero.
+* Description: Allows the user to input a call number for a book
+  in the Bern Dibner Library, and receieve a map with the book's shelf highlighted.
+ -->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <title>Find My Book in Bern Dibner Library!</title>
+  <meta name="author" content="Emily Sillars, Lyanne LaLunio, Cindy Lee, and Andrew Lucero" />
+  <meta name="description" content="Find my book!" />
+  <!-- Prevent smartphones from scaling pages down -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--custom style sheets-->
+  <link href="findmybook.css" type="text/css" rel="stylesheet" />
+  <!--  <link href="https://fonts.googleapis.com/css?family=Concert+One|Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">---->
+</head>
+
+<body>
+  <!-- PAGE CONTENT --------------------------------------------------------------------------------->
+  <div id="#page">
+    <header>
+      <div #titleBox>
+        <h1>Find my Book at Bern Dibner Library!</h1></div>
+      <!-- NAVIAGATION ------------------------------------------------------------------------------------------------>
+      <nav>
+        <div class="nav-link">
+          <a href="https://library.nyu.edu/locations/bern-dibner-library/" target="_blank">
+            <p>Library Catalog</p>
+          </a>
+          <div>
+            <!--  <a href="#">link Two</a>
+        <a href="#">link three</a> -->
+      </nav>
+      <!-- END OF NAVIGATION ------------------------------------------------------------------------------------------>
+    </header>
+    <!-- Call Number Input box -->
+    <div id="inputBox" class="center">
+      <!--  <p>Paste or Type your call number into the box below...</p> -->
+      <div class="form center">
+        <label for="callNumberField">Enter a call number: </label>
+        <input type="text" id="callNumberField" class="callNumberField">
+        <input type="submit" value="Find it!" class="callNumberSubmit">
+      </div>
+      <p id="resultText" class="center"></p>
+    </div>
+    <!-- Maps-->
+      <div id="mapF3" class="map center">
+        <p class="center">Floor 3 Map</p>
+        <p class="center">No shelf highlighted yet.</p>
+      </div>
+      <div id="mapF4" class="map center">
+        <pclass="center">Floor 4 Map</p>
+          <p>No shelf highlighted yet.</p>
+      </div>
+
+    <!-- END OF PAGE CONTENT -------------------------------------------------------------------------->
+    <!--  FOOTER   -------------------------------------------------------------------------------------------------->
+    <div>
+      <!-- Content here -->
+      <footer>
+        <a class="footerLink" href="#page">Take me up</a>
+      </footer>
+    </div>
+    <!--  END OF FOOTER   ------------------------------------------------------------------------------------------->
+    <script type="text/javascript" src="parser.js"></script>
+    <!--  <script type="text/javascript" src="jquery.js"></script> -->
+</body>
+
+</html>
