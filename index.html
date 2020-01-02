@@ -24,57 +24,61 @@
 
 <body>
   <div id = "rainDrops"><!--<p class = "fall">.</p>--></div>
-  <!-- NAVIAGATION ------------------------------------------------------------------------------------------------------------------------------>
-  <!--Navbar-->
-  <nav class="navbar navbar-light navbar-1 white">
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="index.html">
-      <img class ="BannerImage" src="png_images/nameBanner_300.png" srcset="png_images/nameBanner_600.png 2x" alt="Emily Sillars logo here!." /></a>
-    <!-- Collapse button for mobile-->
-    <button id="burgerMobile" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    <!--Nav Bar links, visible in Desktop size only (otherwise in hamburger menu) -->
-    <a id="comicsNav" class="nav-link nav-item " href="comics.html">
-          <img class ="navImage" src="png_images/comics_nav_blank300.png"
-          srcset="png_images/comics_nav_blank300.png 2x" alt="Link to comics page here" /></a>
-    </a>
-    <a id="multimediaNav" class="nav-link nav-item " href="multimedia.html">
-          <img class ="navImage" src="png_images/multimedia_nav_blank300.png"
-          srcset="png_images/multimedia_nav_blank300.png 2x" alt="Link to multimedia projects here" /></a>
-    </a>
-    <a id="aboutNav" class="nav-link nav-item " href="about.html">
-          <img class ="navImage" src="png_images/about_nav_blank_300.png"
-          srcset="png_images/about_nav_blank_300.png 2x" alt="Link to about page here" /></a>
-    </a>
-    <!-- Collapse button for desktop-->
-    <button id="burgerDesktop" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
-      <!-- Links -->
-      <ul class="navbar-nav mr-auto">
-        <!-- These links disappear at desktop size -->
-        <a class="nav-item center tempTextLink" href="comics.html">Comics</a>
-        <a class="nav-item center tempTextLink" href="multimedia.html">Multimedia</a>
-        <a class="navLink nav-item center tempTextLink" href="about.html">About</a>
-        <!-- These links remain at all sizes -->
-        <li class="nav-item active center">
-          <a id="dropDownMenuTitle" class="nav-link" href="#">Hamburger Menu!<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item center">
-          <a class="nav-link" href="#"><img class = "burgerDropDownIcon"
-                  src="png_images/cheeseBurger1_300.png"
-                  srcset="png_images/cheeseBurger1_300.png" alt="large burger." /> Large Burger $4.</a>
-        </li>
-        <li class="nav-item center">
-          <a class="nav-link" href="#"><img class = "burgerDropDownIcon"
-                  src="png_images/cheeseBurger2_300.png"
-                  srcset="png_images/cheeseBurger2_300.png" alt="blue burger." /> Blue burger $2.</a>
-        </li>
-      </ul>
-    </div>
-    <!-- End of Collapsible content -->
-  </nav>
-  <!--/.Navbar-->
-  <!-- END  OF NAVIAGATION ------------------------------------------------------------------------------------------------------------------------------>
+<!-- INCLUDING HTML ------------------------------------>
+<div include-html="header.html"></div>
+<!-- END OF INCLUDING HTML --------------------------- -->
+<!-- NAVIAGATION ------------------------------------------------------------------------------------------------------------------------------>
+<!--Navbar-->
+<nav class="navbar navbar-light navbar-1 white">
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="index.html">
+    <img class ="BannerImage" src="png_images/nameBanner_300.png" srcset="png_images/nameBanner_600.png 2x" alt="Emily Sillars logo here!." /></a>
+  <!-- Collapse button for mobile-->
+  <button id="burgerMobile" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <!--Nav Bar links, visible in Desktop size only (otherwise in hamburger menu) -->
+  <a id="comicsNav" class="nav-link nav-item " href="comics.html">
+        <img class ="navImage" src="png_images/comics_nav_blank300.png"
+        srcset="png_images/comics_nav_blank300.png 2x" alt="Link to comics page here" /></a>
+  </a>
+  <a id="multimediaNav" class="nav-link nav-item " href="multimedia.html">
+        <img class ="navImage" src="png_images/multimedia_nav_blank300.png"
+        srcset="png_images/multimedia_nav_blank300.png 2x" alt="Link to multimedia projects here" /></a>
+  </a>
+  <a id="aboutNav" class="nav-link nav-item " href="about.html">
+        <img class ="navImage" src="png_images/about_nav_blank_300.png"
+        srcset="png_images/about_nav_blank_300.png 2x" alt="Link to about page here" /></a>
+  </a>
+  <!-- Collapse button for desktop-->
+  <button id="burgerDesktop" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <!-- These links disappear at desktop size -->
+      <a class="nav-item center tempTextLink" href="comics.html">Comics</a>
+      <a class="nav-item center tempTextLink" href="multimedia.html">Multimedia</a>
+      <a class="navLink nav-item center tempTextLink" href="about.html">About</a>
+      <!-- These links remain at all sizes -->
+      <li class="nav-item active center">
+        <a id="dropDownMenuTitle" class="nav-link" href="#">Hamburger Menu!<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item center">
+        <a class="nav-link" href="#"><img class = "burgerDropDownIcon"
+                src="png_images/cheeseBurger1_300.png"
+                srcset="png_images/cheeseBurger1_300.png" alt="large burger." /> Large Burger $4.</a>
+      </li>
+      <li class="nav-item center">
+        <a class="nav-link" href="#"><img class = "burgerDropDownIcon"
+                src="png_images/cheeseBurger2_300.png"
+                srcset="png_images/cheeseBurger2_300.png" alt="blue burger." /> Blue burger $2.</a>
+      </li>
+    </ul>
+  </div>
+  <!-- End of Collapsible content -->
+</nav>
+<!--/.Navbar-->
+<!-- END  OF NAVIAGATION -------------------------------------------------------------------------------------------------------------------->
+
   <!-- PAGE CONTENT --------------------------------------------------------------------------------------------------------------------------->
   <div class="container-fluid">
     <div class="row">
@@ -89,14 +93,34 @@
       <div class="col-sm">
         <!--Current Project content------------------------------------------------------->
         <div id="currentProject" class="align-left">
-          <a class = "navLink" href="octoberValentine.html">
-          <img id="currentProjectImage" src="png_images/octoberValentine_promo.png" srcset="png_images/octoberValentine_promo.png 2x" alt="an orange water bottle on a desk." />
+          <img id="currentProjectTitle" src="dog/title2.PNG"  alt="text saying 'DOG'" />
+          <a class = "navLink" href="dog.html">
+          <img id="currentProjectImage" src="gif_images/dog-wag.gif"  alt="a dog wagging its tail." />
 
-            <h4><strong>A dreamy, platformer-style videogame!</strong></h4>
+            <h4>A doggy, platformer-style videogame!</h4>
           </a>
         </div>
+        <!-- end of current project content ----------------------------------------------->
+        <!--Bambara beans content------------------------------------------------------->
+        <div id="beanProject" class="align-left">
+          <h4>BAMBARA BEANS</h4>
+          <a class = "navLink" href="bambarabeans.html">
+          <img id = "currentProjectImage" src="png_images/bambaraBeans300.png"  alt="a bean videogame" />
+            <h4>A bean-themed secret message encoder!</h4>
+          </a>
+        </div>
+        <!-- end of bambara beans content ----------------------------------------------->
       </div>
       <div class="col-sm">
+        <!--Bambara beans content------------------------------------------------------->
+        <div id="beanProject" class="align-left">
+          <h4>BAMBARA BEANS</h4>
+          <a class = "navLink" href="bambarabeans.html">
+          <img id = "currentProjectImage" src="png_images/bambaraBeans300.png"  alt="a bean videogame" />
+            <h4>A bean-themed secret message encoder!</h4>
+          </a>
+        </div>
+        <!-- end of bambara beans content ----------------------------------------------->
         <!--Fake Ad (contains 3 peices, plus one hidden peice)------------------------------------------------------->
         <div id= "tomatoAd" class="content">
           <div><img id="angryAngryTomato" class="align-left" src="invisible.png"
@@ -132,7 +156,7 @@
         <div id= "animationAd" class="content">
           <div>
             <a href="animation.html" class = "navLink">
-              <img class="align-left half" src="gif_images/dog-wag.gif" alt="dog wagging its tail." />
+              <img class="align-left half" src="gif_images/blob_forward.gif" alt="orange blob walking forward." />
               <span id = "dogText"><p>Check out my animated sprites!</p></span>
             </a>
         </div>
@@ -158,8 +182,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!--^make sure the links ARE IN THIS PARTICULAR ORDER! OTHERWISE, will get errors! -->
   </div>
+  <!-- My javacript included below -->
   <!--  <script type="text/javascript" src="pureJS.js"></script> -->
-    <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="includehtml.js"></script>
+  <!-- <script>
+    includeHTML();
+  </script> -->
+  <script type="text/javascript" src="jquery.js"></script>
 
 </body>
 </html>
