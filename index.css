@@ -47,7 +47,7 @@ body {
 }
 /*************** navigation ***************/
 .navImage{
-  height: 25px;
+   height: 25px;
 }
 /***********These nav bar links are only visible in desktop size ********/
 /****  (in mobile, they're accessible thru hamburger menu)***************/
@@ -146,7 +146,7 @@ a.dropdown-item{
   margin: 2%;
   padding: 1%;
   width: 96%;
-  background-color: #f7f0e8;
+  background-color: lightblue;
   text-align: center;
   font-size: 100%;
 }
@@ -163,7 +163,8 @@ a.dropdown-item{
   float:left;
   text-align: center;
   /* background-color: #92d68b; */
-  background-color: #f7f0e8;
+  /* background-color: #f7f0e8; */
+  background-color: lightblue;
 }
 #beanProject{
   /* background-color: #e5bcff; */
