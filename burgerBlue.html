@@ -18,9 +18,10 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!--custom style sheets-->
-  <link href="animation.css" type="text/css" rel="stylesheet" />
+  <link href="burger.css" type="text/css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Concert+One|Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -39,15 +40,15 @@
     <a id="comicsNav" class="nav-link nav-item " href="comics.html">
           <img class ="navImage" src="png_images/comics_nav_blank300.png"
           srcset="png_images/comics_nav_blank300.png 2x" alt="Link to comics page here" /></a>
-    </a>
+
     <a id="multimediaNav" class="nav-link nav-item " href="multimedia.html">
           <img class ="navImage" src="png_images/multimedia_nav_blank300.png"
           srcset="png_images/multimedia_nav_blank300.png 2x" alt="Link to multimedia projects here" /></a>
-    </a>
+
     <a id="aboutNav" class="nav-link nav-item " href="about.html">
           <img class ="navImage" src="png_images/about_nav_blank_300.png"
           srcset="png_images/about_nav_blank_300.png 2x" alt="Link to about page here" /></a>
-    </a>
+
     <!-- Collapse button for desktop-->
     <button id="burgerDesktop" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <!-- Collapsible content -->
@@ -55,6 +56,8 @@
       <!-- Links -->
       <ul class="navbar-nav mr-auto">
         <!-- These links disappear at desktop size -->
+        <!-- <a class="nav-item center tempTextLink" href="comics.html"><img src="png_images/comics_nav_plain_300.png"
+        srcset="png_images/comics_nav_plain_300.png 2x" alt="Link to comics page here" /></a> -->
         <a class="nav-item center tempTextLink" href="comics.html">Comics</a>
         <a class="nav-item center tempTextLink" href="multimedia.html">Multimedia</a>
         <a class="navLink nav-item center tempTextLink" href="about.html">About</a>
@@ -80,88 +83,36 @@
   <!-- END  OF NAVIAGATION ------------------------------------------------------------------------------------------------------------------------------>
   <!-- PAGE CONTENT --------------------------------------------------------------------------------------------------------------------------->
   <div class="container-fluid">
-    <div id="title">
-      <!-- <strong>These are some animated sprites I'm working on for <a class = "navLink" href = "octoberValentine.html">October Valentine!</a></strong> -->
-      <strong>These are some animated sprites I'm working on for future projects!</strong>
+    <div id="title" >
+       <img id = "congrats" src="png_images/congrats.png" alt="congratulations on your burger." />
+       <div id="canvasWrapper" class="center">
+         <canvas id = "burger"></canvas>
+       </div>
+      <h3>Please give your burger a name and age:</h3>
+      <br>
+      <!-- Burger info form-->
+      <div id="inputBox" class="center">
+        <div class="form ">
+          <label for="nameField">Name: </label>
+          <input type="text" id="nameField" class="nameField"><br>
+          <label for="ageField">Age: </label>
+          <input type="text" class="ageField"><br>
+          <input type="submit" value="Get My Burger!" class="infoSubmit">
+        </div>
+        <p id="resultText" class="center"></p>
+      </div>
+      <!-- burger info form end -->
     </div>
-    <!-- FIRST ROW ---------------------------------------------------------------------------------------------------------->
     <div class="row">
       <div class="col-sm">
-        <!-- column 1 ------------------------>
         <!--Above the fold content------------------------------------------------------->
-        <div id="animationCol1" class="content">
-          <img id="girlForward" class="align-left" src="gif_images/girl_forward.gif" alt="girl walking forward." />
-          <img id="girlRight" class="align-left" src="gif_images/girl_right.gif" alt="girl walking right." />
-        </div>
-        <div class="col-sm">
-          <!-- column 2 ------------------------>
-          <!--Current Project content------------------------------------------------------->
-          <div id="animationCol2" class="content">
-            <img id="forwardBlob" src="gif_images/blob_forward.gif" alt="orange blob walking forward." />
-          </div>
+        <!-- <div id="canvasWrapper" class="center">
+          <canvas id = "burger"></canvas>
+        </div> -->
 
-          <div class="col-sm">
-            <!-- column 3 ------------------------>
-            <div id="animationCol1" class="content">
-              <img id="celloForward" class="align-left" src="gif_images/cello_forward.gif" alt="string instrument walking right." />
-              <img id="celloRight" class="align-left" src="gif_images/cello_right.gif" alt="string instrument walking forward." />
-            </div>
-            <!-- end of Animation Ad------------------------------------------------------->
-          </div>
-        </div>
       </div>
     </div>
-    <!-- end of first row    ------------------------------------------------------------------------------------------------------>
-    <!-- SECOND ROW    ------------------------------------------------------------------------------------------------------>
-    <div class="row">
-      <div class="col-sm">
-        <!-- column 1------------------------>
-        <div id="animationCol1" class="content">
-          <img class="align-left half" src="gif_images/girl_forward.gif" alt="girl walking forward." />
-          <img class="align-left half" src="gif_images/girl_back.gif" alt="girl walking backard." />
-        </div>
-
-        <div class="col-sm">
-          <!-- column 2------------------------>
-          <div id="animationCol3" class="content">
-            <img class="align-left half" src="gif_images/blob_backward.gif" alt="orange blob walking backwards." />
-            <img class="align-left half" src="gif_images/blob_right.gif" alt="orange blob walking right." />
-            <img id="blobBendForward" class="align-left" src="gif_images/blob_bend_forward.gif" alt="orange blob bending forward." />
-            <img id="blobBendBackward" class="align-left" src="gif_images/blob_bend_back.gif" alt="orange blob bending backward." />
-          </div>
-          <div class="col-sm">
-            <!-- column 3------------------------>
-            <div id="animationCol1" class="content">
-              <img class="align-left half" src="gif_images/cello_forward.gif" alt="string instrument walking forward." />
-              <img class="align-left half" src="gif_images/cello_backwards.gif" alt="string instrument walking backard." />
-            </div>
-            <div id="animationCol1" class="content">
-              <img class="align-left half" src="gif_images/dog-wag.gif" alt="dog wagging its tail." />
-              <img class="align-left half" src="gif_images/dog-right.gif" alt="dog walking right." />
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-    <!-- end of second row ---------------------------------------------------------------------------------------------------------->
-    <!-- THIRD ROW    ------------------------------------------------------------------------------------------------------>
-    <div class="row">
-      <div class="col-sm">
-        <!-- column 1------------------------>
-
-        <div class="col-sm">
-          <!-- column 2------------------------>
-
-          <div class="col-sm">
-            <!-- column 3------------------------>
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end of third row ---------------------------------------------------------------------------------------------------------->
-    <!-- <div id = "title" >Learn more about October Valentine <a class = "navLink center" href = "octoberValentine.html"><strong>here<strong></a>.</div> -->
-    <div id = "title" >Learn more about my projects <a class = "navLink center" href = "multimedia.html"><strong>here<strong></a>.</div>
     <!--  FOOTER   ----------------------------------------------------->
     <div class="navbar navbar-light footer">
       <!-- Content here -->
@@ -179,9 +130,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--^make sure the links ARE IN THIS PARTICULAR ORDER! OTHERWISE, will get errors! -->
-  </div>
+
   <!--  <script type="text/javascript" src="pureJS.js"></script> -->
   <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="burger/burgerBlue.js"></script>
 </body>
 
 </html>
