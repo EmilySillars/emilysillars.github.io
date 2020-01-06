@@ -198,6 +198,15 @@ a.dropdown-item{
   float:left;
   text-align: center;
 }
+.rainContent {
+  margin: 2%;
+  padding: 1%;
+  width: 96%;
+  background-color: lightblue;
+  font-size: 90%;
+  float:left;
+  text-align: center;
+}
 /********************Rules for the 3 parts of the Fake Ad************************************************/
 #ad1 {
   margin-left: 2%;

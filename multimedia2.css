@@ -12,10 +12,6 @@
 /* GENERAL RULES                                                                                                               */
 
 /*******************************************************************************************************************************/
-@font-face {
-    font-family: 'typenoksidi';
-    src: 'url('typenoksidi.ttf')';
-}
 * {
   padding: 0;
   margin: 0;
@@ -180,34 +176,21 @@ a.dropdown-item{
   float:left;
   text-align: center;
 }
-.half{
-  width: 45%;
+.colThird{
+  width: 29%;
 }
-
 #title{
-  font-family: 'typenoksidi', serif;
   padding: 1%;
   font-size: 120%;
   text-align: center;
-
 }
-
-#inputBox{
-  font-family: 'typenoksidi','Lato', sans-serif;
-}
-
-#congrats{
+#beanImage{
   width: 100%;
-  padding: 1%;
+}
+#demonImage{
+  width: 80%;
 }
 
-#canvasWrapper{
-  width: 100%;
-  text-align: center;
-}
-#burger{
-  width: 90%;
-}
 /***************  FOOTER   *****************/
 
 footer {
@@ -270,23 +253,5 @@ display:block;
     background-size: 130px;
     background-repeat: no-repeat;
   }
-
-/*     general content*/
-#title{
-  padding: 1%;
-  font-size: 120%;
-  text-align: center;
-
-}
-
-#congrats{
-  width: 50%;
-  padding: 1%;
-}
-
-#canvasWrapper{
-  width: 45%;
-  text-align: center;
-}
 
 }/*end of media query*/

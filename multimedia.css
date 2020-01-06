@@ -141,55 +141,30 @@ a.dropdown-item{
 /************************************************  END OF Header + Navigation  ******************************************************************/
 
 /*************************************************** PAGE CONTENT*******************************************************************************/
-/*************Current Project content*************************/
-#currentProject {
-  margin: 2%;
-  padding: 1%;
-  width: 96%;
-  background-color: #f7f0e8;
-  text-align: center;
-  font-size: 100%;
-}
-#currentProjectImage {
-  width: 100%;
-}
-/*************Above the fold content*************************/
-#focusImage {
-  margin: 2%;
-  padding: 1%;
-  width: 96%;
-  background-color: white;
-  text-align: center;
-  font-size: 50%;
-}
-#focusImageImage {
-  width: 100%;
-}
+
 /*************General content (updates, Fake ads etc.)*************************/
 .content {
-  margin: 2%;
-  padding: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 2%%;
+  margin-right: 2%;
+  /* padding: 2%; */
   width: 96%;
-  background-color: lightblue;
   font-size: 90%;
-  overflow: auto;
   float:left;
   text-align: center;
 }
-.colThird{
-  width: 29%;
+
+.project{
+  padding:1%;
+  width: 75%;
+  background-color: lightblue;
+  font-size: 200%;
 }
-#title{
-  padding: 1%;
-  font-size: 120%;
-  text-align: center;
+.project-description{
+  font-size: 150%;
 }
-#beanImage{
-  width: 100%;
-}
-#demonImage{
-  width: 80%;
-}
+
 
 /***************  FOOTER   *****************/
 

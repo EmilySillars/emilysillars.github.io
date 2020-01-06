@@ -126,7 +126,7 @@ a.dropdown-item{
 }
 .tempTextLink{
   display:block;
-  text-decoration: none;
+  font-family: 'Walter Turncoat', cursive;
   color: #7A3458;
 }
 /*************** Hamburger menu text link rules ***************/

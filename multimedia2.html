@@ -2,10 +2,11 @@
 * Author: Emily Sillars
 * Date: 4/19/18
 * Assignment #7: Framework
-* Description: October Valentine project page in html using bootstrap classes.
+* Description: Homepage in html using bootstrap classes.
 */ -->
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
@@ -17,12 +18,15 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!--custom style sheets-->
-  <link href="dog.css" type="text/css" rel="stylesheet" />
+  <link href="multimedia.css" type="text/css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Concert+One|Lato" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 </head>
 
 <body>
+  <div id="rainDrops">
+    <!--<p class = "fall">.</p>-->
+  </div>
   <!-- NAVIAGATION ------------------------------------------------------------------------------------------------------------------------------>
   <!--Navbar-->
   <nav class="navbar navbar-light navbar-1 white">
@@ -51,12 +55,9 @@
       <!-- Links -->
       <ul class="navbar-nav mr-auto">
         <!-- These links disappear at desktop size -->
-        <a class="nav-item center tempTextLink" href="comics.html">
-            Comics</a>
-        <a class="nav-item center tempTextLink" href="multimedia.html">
-            Multimedia</a>
-        <a class="nav-item center tempTextLink" href="about.html">
-            About</a>
+        <a class="nav-item center tempTextLink" href="comics.html">Comics</a>
+        <a class="nav-item center tempTextLink" href="multimedia.html">Multimedia</a>
+        <a class="navLink nav-item center tempTextLink" href="about.html">About</a>
         <!-- These links remain at all sizes -->
         <li class="nav-item active center">
           <a id="dropDownMenuTitle" class="nav-link" href="#">Hamburger Menu!<span class="sr-only">(current)</span></a>
@@ -79,99 +80,46 @@
   <!-- END  OF NAVIAGATION ------------------------------------------------------------------------------------------------------------------------------>
   <!-- PAGE CONTENT --------------------------------------------------------------------------------------------------------------------------->
   <div class="container-fluid">
-    <div class="container carousel">
-</div>
-  <div class = "container-fluid">
+    <div id="title">
+    <!--  <strong>This page is still under construction...</strong>   -->
+    </div>
     <div class="row">
       <div class="col-sm">
-        <!--- TITLE OF PROJECT -->
-        <h2 id = "projectTitle">DOG<h2>
-        <!-- Above the fold image carousel here -->
-        <div class = "content"> <!-- div content wrapper to add blue behind carousel-->
-        <div id = "carouselSizerBox" class = "center">
-        <div id="carouselExampleControls" class="carousel slide center" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="dog/meadow.PNG" alt="First slide">
+        <!--Above the fold content------------------------------------------------------->
+        <div class="content colThird center">
+          <a class = "navLink" href="bambaraBeans.html">
+          <img id = "beanImage" class="align-left" src="png_images/bambaraBeans300.png" alt="Image of a secret message maker program." />
+          <h4><strong>Bambara Beans Secret Message Maker!<strong></h4>
+          </a>
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="dog/grass.PNG" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="dog/water.PNG" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="dog/menu.PNG" alt="Fourth slide">
-        </div>
-        <!-- <div class="carousel-item">
-          <img class="d-block w-100" src="png_images/carousel5.jpg" alt="Fifth slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="png_images/carousel6.jpg" alt="Sixth slide">
-        </div> -->
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+
+
+
+          <div class="col-sm">
+        <!-- cyberfeminism --------------------------------------------------------------->
+              <div class = "content colThird center">
+                <a class = "navLink" href="cyberfeminism.html">
+                <img id = "demonImage" src="png_images/cyberGirl.png" alt="a girl using the computer." />
+              <h4><strong>Cyberfeminism: <br />Operation Spread the Word!</strong><h4>
+                </a>
+              </div>
+        <!--Current Project content------------------------------------------------------->
+              <div class="content colThird center">
+                <a class = "navLink" href="octoberValentine.html">
+                <img id="currentProjectImage" src="png_images/octoberValentine_promo.png" srcset="png_images/octoberValentine_promo.png 2x" alt="an orange water bottle on a desk." />
+                  <h4><strong>A dreamy, platformer-style videogame!</strong></h4>
+              </a>
+            </div>
+          <!-- other content --------------------------------------------------------------->
+            <div class = "content colThird center">
+              <img id = "demonImage" src="png_images/demon300.png" alt="a cute demon with horns." />
+            <h4>More projects to be added soon... <br />(this page is still under construction)<h4>
+            </div>
+          </div>
+
     </div>
   </div>
-    </div> <!-- end of div content wrapper to add blue bg behind carousel-->
-  <!-- END OF Above the fold image carousel -->
-    <!-- video play through start -->
-    <div class="content">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/d8SEVRKo3tA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <h6 class="card-text"><a href="https://youtu.be/d8SEVRKo3tA" target="_blank" class = "card-link">click here to play on youtube</a></h6>
-      </div>
-    <!-- video play through end -->
-      </div>
-      <div class="col-sm">
-
-        <!--- TITLE OF PROJECT -->
-        <h2 id = "projectTitleDesktop">DOG</h2>
-
-        <!--Project Description------------------------------------------------------->
-        <div id="projectDescription" class="content">
-            <!-- <img class="card-img-top" src="dog/title.PNG" alt="Card image cap"> -->
-          <h2 class="card-title">A 2D platformer videogame!</h2>
-          <h5 class="card-subtitle mb-2 text-muted">Completed Fall 2019</h5>
-          <h4 class="card-text">Play as a little dog and explore a dark meadow...</h4>
-          <h4 class="card-text">Beware of accordions!</h4>
-          <h4 class="card-text">Programmed in C++ with OpenGL and SDL.</h4>
-          <h4 class="card-text"> All graphics hand drawn and animated by Emily.</h4>
-        </div>
-        <!--End of description-------------------------------------------------------------------------------------------------------------->
-        <!--Project Download------------------------------------------------------->
-          <div id = "download"class="content">
-        <h3 class="card-title">Download this Project</h3>
-        <!-- <p class="card-text">Playable prototype online
-          <a href="https://emilysillars.itch.io/october-valentine-prototype" target = "_blank" class = "card-link">here!</a> </p> -->
-        <h4>  <a href="dog/DOG.zip" class = "card-link">Windows</a> </h4>
-          <!-- <a href="#" class="card-link">Mac</a> -->
-        <h5><p><i>mac download currently unavailable, sorry!</i></p> </h5>
-      </div>
-        <!--END OF Project Download------------------------------------------------------->
-
-        <!-- Music Credits start-->
-        <div id="projectDescription" class="content">
-          <h4 class="card-text">Music and Sound Effect Credits</h4>
-          <h5 class="card-text"><a href="https://freesound.org/people/patobottos/sounds/178504/" target="_blank" class = "card-link">cicadas_crickets_night by patobottos</a></h5>
-          <h5 class="card-text"><a href="https://freesound.org/people/CGEffex/sounds/158974/" target="_blank" class = "card-link">Dog_howl_03 by CGEffex</a></h5>
-          <h5 class="card-text"><a href="https://freesound.org/people/avroshk/sounds/339957/" target="_blank" class = "card-link">Toy Accordion by avroshk</a></h5>
-          <h5 class="card-text"><a href="https://freesound.org/people/vrodge/sounds/119542/" target="_blank" class = "card-link">Instrument_acordian_open by vrodge</a></h5>
-        </div>
-        <!-- Music Credits start-->
-    </div>
-      </div>
   </div>
-  </div>
-  <!---ANIMATED SPRITES----------------------------------------------------->
-
-  <!---ANIMATED SPRITES END----------------------------------------------------->
   <!--  FOOTER   ----------------------------------------------------->
   <div class="navbar navbar-light footer">
     <!-- Content here -->
@@ -190,5 +138,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!--^make sure the links ARE IN THIS PARTICULAR ORDER! OTHERWISE, will get errors! -->
   </div>
+  <!--  <script type="text/javascript" src="pureJS.js"></script> -->
+  <script type="text/javascript" src="jquery.js"></script>
 </body>
+
 </html>

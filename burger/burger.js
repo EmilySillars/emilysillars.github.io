@@ -6,6 +6,8 @@
  */
 window.onload = function(){ //make sure the page is loaded before performing javascript actions!
 
+const $form = $('#inputBox');
+const $downloadLink = $('#downloadLink');
  const nameField = document.querySelector('.nameField');
  const ageField = document.querySelector('.ageField');
  const resultText = document.querySelector('#resultText');
@@ -18,6 +20,9 @@ window.onload = function(){ //make sure the page is loaded before performing jav
  let canvas = document.querySelector('#burger');
  canvas.width = 0;
  canvas.height = 0;
+
+ //hide download link at start
+ $downloadLink.hide();
 
 function createBurger(){
 
@@ -36,9 +41,8 @@ function createBurger(){
        context.font = "30pt typenoksidi";
        context.fillText(nameInput, 90, 545); //21
        context.fillText(ageInput + " years", 250, 610); //13 - 6 = 7
-
+       $downloadLink.attr("href",String(canvas.toDataURL()));
    };
-
    imageObj.src = "png_images/myBurger.png";
 
 }
@@ -62,6 +66,8 @@ function createBurger(){
    else{
      //draw the burger
      createBurger();
+     $form.hide();
+     $downloadLink.show();
    }
    resultText.textContent = result;
  }
