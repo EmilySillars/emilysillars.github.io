@@ -5,9 +5,9 @@
 * Authors: Emily Sillars
  */
 window.onload = function(){ //make sure the page is loaded before performing javascript actions!
-
-const $form = $('#inputBox');
-const $downloadLink = $('#downloadLink');
+ const $title = $('#congrats');
+ const $form = $('#inputBox');
+ const $downloadLink = $('#downloadLink');
  const nameField = document.querySelector('.nameField');
  const ageField = document.querySelector('.ageField');
  const resultText = document.querySelector('#resultText');
@@ -23,6 +23,7 @@ const $downloadLink = $('#downloadLink');
 
  //hide download link at start
  $downloadLink.hide();
+ $title.hide();
 
 function createBurger(){
 
@@ -41,7 +42,8 @@ function createBurger(){
        context.font = "30pt typenoksidi";
        context.fillText(nameInput, 90, 545); //21
        context.fillText(ageInput + " years", 250, 610); //13 - 6 = 7
-       $downloadLink.attr("href",String(canvas.toDataURL()));
+      // $downloadLink.attr("href",String(canvas.toDataURL()));
+       link = String(canvas.toDataURL());
    };
    imageObj.src = "png_images/myBurger.png";
 
@@ -64,6 +66,7 @@ function createBurger(){
      result += " Age can have a max of 7  digits."
    }
    else{
+     $title.show();
      //draw the burger
      createBurger();
      $form.hide();
@@ -72,11 +75,34 @@ function createBurger(){
    resultText.textContent = result;
  }
 
+function download(){
+  $downloadLink.hide();
+}
  //wait for the user to input a call number.
  infoSubmit.addEventListener('click', getBurgerInfo);
 
+ function download(){
+   // link = "<img src='png_images/bean.png'></img>"
+   //  let t1 = document.querySelector('.infoSubmit');
+   //  var d = document.createElement("div");
+   //     d.id ="oiio";
+   //     d.innerHtml = "<div>lordy lordy</div>";
+   //     t1.appendChild(d);
+    let $b = $('#burgerImage');
+    // $b.attr("src","png_images/bean2.JPG");
+      $b.attr("src",link);
+   // var win = window.open();
+   //   win.document.write('<iframe src="' + "https://google.com"
+   //   + '" frameborder="0" style="border:0; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%;" allowfullscreen></iframe>');
+   // canvas.toDataURL()}
+   // var win1 = window.open();
+   // win1.document.write("<br><img src = '"+"png_images/bean2.png"+"'/>");
+   // win1.print();
+   // win1.location.reload();
+   window.print();
+ }
 
-
+ $downloadLink.on('click', download);
 /*
 //variable visible to all functions,initialized at start of run.
 let rain = false; //a flag that indicates when the rain button is ON. Rain is OFF, (false), by default.
