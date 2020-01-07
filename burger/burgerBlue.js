@@ -81,8 +81,6 @@ function createBurger(){
  function printBurger(){
     let $burg = $('#burgerImage');
     $burg.attr("src",link);
-    let $canvas = $('#burger');
-    $canvas.hide();
     window.print();
  }
 
