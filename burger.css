@@ -200,12 +200,18 @@ a.dropdown-item{
   width: 100%;
   padding: 1%;
 }
+#downloadLink{
+  font-family: 'Lato', sans-serif;
+}
 
 #canvasWrapper{
   width: 100%;
   text-align: center;
 }
 #burger{
+  width: 90%;
+}
+#burgerImage{
   width: 90%;
 }
 /***************  FOOTER   *****************/
