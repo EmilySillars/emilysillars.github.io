@@ -44,6 +44,7 @@ function createBurger(){
        context.fillText(ageInput + " years", 250, 610); //13 - 6 = 7
       // $downloadLink.attr("href",String(canvas.toDataURL()));
        link = String(canvas.toDataURL());
+       resultText.textContent = link;
    };
    imageObj.src = "png_images/myBurger.png";
 
@@ -75,9 +76,6 @@ function createBurger(){
    resultText.textContent = result;
  }
 
-function download(){
-  $downloadLink.hide();
-}
  //wait for the user to input a call number.
  infoSubmit.addEventListener('click', getBurgerInfo);
 
