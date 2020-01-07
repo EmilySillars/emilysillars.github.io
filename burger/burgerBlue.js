@@ -82,7 +82,7 @@ function createBurger(){
     let $burg = $('#burgerImage');
     $burg.attr("src",link);
     let $canvas = $('#burger');
-    canvas.hide();
+    $canvas.hide();
     window.print();
  }
 
