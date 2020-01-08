@@ -11,7 +11,7 @@ $(document).ready(function(){
   let rainfall = false; //a flag that indicates when rain should be FALLING. Rainfall is OFF, (false), by default.
   var speeds = [0,1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6,7,8,9]; //an initialized array of speeds for the twenty rain drops.
     //^ when the raindrops are created, these speeds will be set to random values; (these initial values will never be used).
-  const $slider = $('#rainSlider');
+  const $switch = $('#rainSwitch');
   const $rainDrops = $('#rainDrops');
   //TOMATO DATAFIELDS
   const $tomatoButton = $('#tomatoImage');
@@ -51,16 +51,14 @@ $(document).ready(function(){
   */
   function slide(){
     rain = !rain; //if rain is ON, turn OFF. If rain is OFF, turn ON.
-    if(rain){ //if rain is now ON, slide handel right.
-    $slider.addClass("slidRight");
-    $slider.removeClass("slidLeft");
-    startRaining();
-    }
-    else{ //if rain is now OFF, slide handel left.
-      $slider.addClass("slidLeft");
-      $slider.removeClass("slidRight");
-      stopRaining();
-    }
+      if(rain){ //if rain is now ON, slide handel right.
+        $switch.attr("src","png_images/on.png");
+        startRaining();
+      }
+      else{ //if rain is now OFF, slide handel left.
+        $switch.attr("src","png_images/off.png");
+        stopRaining();
+      }
   }
 
   /*
@@ -213,7 +211,7 @@ $(document).ready(function(){
 
   tomatoDisappears(); //make sure you hide the tomato.
   //if the user clicks on the handle/slider, turn rain ON/OFF accordingly.
-  $slider.on('click', slide);
+  $switch.on('click', slide);
   //if the user clicks on the angry tomato, display the tomato.
   $tomatoButton.on('click',tomatoAppears);
   //update weather.
