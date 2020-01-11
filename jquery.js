@@ -103,16 +103,16 @@ $(document).ready(function(){
   function startRaining(){
     //create 20 rain drops.
       $rainDrops.html(
-      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />");
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/snow.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/snow.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/snow.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/snow.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/snow.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/snow.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/snow.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/snow.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/snow.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/snow.png 2x' alt='a rain drop.' />");
     //initialize random speeds
     for(let k =0; k< speeds.length; k++){
       let spd = (Math.random()*3); //a random number between 0 and 3.
