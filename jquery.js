@@ -103,16 +103,16 @@ $(document).ready(function(){
   function startRaining(){
     //create 20 rain drops.
       $rainDrops.html(
-      "<img class = 'drop fall' src='png_images/drop72.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/drop72.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/drop72.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/drop72.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/drop72.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/drop72.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/drop72.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/drop72.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/drop72.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
-      "<img class = 'drop fall' src='png_images/drop72.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />");
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />"+
+      "<img class = 'drop fall' src='png_images/snow.png' srcset='png_images/drop144.png 2x' alt='a rain drop.' />");
     //initialize random speeds
     for(let k =0; k< speeds.length; k++){
       let spd = (Math.random()*3); //a random number between 0 and 3.
@@ -213,7 +213,7 @@ $(document).ready(function(){
   //if the user clicks on the handle/slider, turn rain ON/OFF accordingly.
   $switch.on('click', slide);
   //if the user clicks on the angry tomato, display the tomato.
-  $tomatoButton.on('click',tomatoAppears);
+  // $tomatoButton.on('click',tomatoAppears);
   //update weather.
   setInterval(weather, 25); //call the weather function every 25 milliseconds to simulate changing frames of an animation.
 });//once the document is ready(loaded,) run all this code!
