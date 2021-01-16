@@ -110,6 +110,9 @@ translate();
  encryptSubmit.addEventListener('click', choseEncrypt);
  decryptSubmit.addEventListener('click', choseDecrypt);
 
+function pause(){
+  consolde.log("clicked the radio!!")
+}
 
 
 /*
