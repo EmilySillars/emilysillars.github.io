@@ -148,6 +148,8 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
+form { display: inline-block; text-align: left; }
+
 
 /************************************************  FOOTER  *******************************************************************************/
 footer {
