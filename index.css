@@ -175,6 +175,14 @@ a.dropdown-item{
   text-align: center;
   font-size: 100%;
 }
+#comicAd{
+  background-color: lightblue;
+  margin: 2%;
+  padding: 1%;
+  width: 96%;
+  text-align: center;
+  font-size: 100%;
+}
 /*************Above the fold content*************************/
 #focusImage {
   margin: 2%;
