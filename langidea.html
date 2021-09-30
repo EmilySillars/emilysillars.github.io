@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <title>Language Idea</title>
+  <meta name="author" content="Emily Sillars" />
+  <meta name="description" content="language idea example." />
+  <!-- Prevent smartphones from scaling pages down -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--custom style sheets-->
+  <link href="langidea.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Concert+One|Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href= "favicon_heart.ico"/>
+
+</head>
+
+<body>
+  <div class = "center">
+  <h1 id = "title">A Story</h1>
+  </div>
+  <div class = "center">
+    <img id = "illustration" class= "container"
+         src="https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xNzI2NTkwMy9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTY4MTA1MjUzMH0.c1BfAYLbqkR0ks-Rf4lzAJeeknabW_6G3VUA1nljEgk/img.jpg?width=980"
+         alt="forest." />
+  </div>
+
+  <div class = "center size50percent">
+    <p id = "text">You hear a cry for help around a bend in the path.</p>
+    <p id = "prompt"><i>What do you do?</i></p>
+    <!-- <a href = "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_display_element_hover"> yo</a>
+    <a href = "https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick_html"> yo</a> -->
+    <!-- <a href = "https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_display_element_hover"> yo</a> -->
+  </div>
+  <div  class = "center  size20percent">
+    <ul id = "choices">
+   </ul>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then js file -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="langidea.js"></script>
+</body>
+<footer>
+  <div class = "center">
+  <p class = "choice" onclick = "myClick(-1)"><i>Click Here to Restart Story</i></p>
+</div>
+</footer>
+</html>

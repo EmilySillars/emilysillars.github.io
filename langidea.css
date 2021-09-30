@@ -1,0 +1,77 @@
+/*******************************************************************************************************************************/
+
+/* GENERAL RULES                                                                                                               */
+
+/*******************************************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  /* color: #7A3458; */
+}
+/************************  Alignment classes  ******************************/
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/***************************        Body      *************************************************/
+body {
+  background-color: white;
+}
+
+#title{
+  padding: 1%;
+  /* width: 80%; */
+}
+#illustration{
+
+}
+#text{
+    padding: 1%;
+}
+#choices{
+  padding: 1%;
+  list-style:initial;
+  text-align: left;
+}
+
+.size20percent{
+  width: 20%;
+  height: auto;
+}
+
+.size50percent{
+  width: 50%;
+  height: auto;
+}
+
+.choice:hover{
+  font-weight: bold;
+  text-decoration: underline;
+
+}
+
+/******************************************************************************************************/
+/* https://stackoverflow.com/questions/15685666/changing-image-sizes-proportionally-using-css */
+.container {
+    width: 400px;
+    height: 240px;
+}
+
+/* Resize images */
+.container img {
+    width: 100%;
+    height: auto;
+}
+/******************************************************************************************************/
