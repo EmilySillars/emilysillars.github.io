@@ -1,0 +1,305 @@
+/*
+* Author: Emily Sillars
+* Date: 4/19/18
+* Assignment #7: Framework
+* Description: This is a stylesheet created to style my frameowrk assignment's October Valentine project page.
+* This stylesheet styles for mobile and desktop with one breakpoint at 600 pixels in width.
+* It also implements and modifies boot strap classes.
+*/
+
+/*******************************************************************************************************************************/
+
+/* GENERAL RULES                                                                                                               */
+
+/*******************************************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  color: #7A3458;
+}
+/************************  Alignment classes  ******************************/
+
+.align-left {
+  float: left;
+}
+
+.align-right {
+  float: right;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+/***************************        Body      *************************************************/
+body {
+  background-color:white;
+}
+/************************************************  Header  ******************************************************************/
+.navbar{
+  background-color: lightblue;
+  font-size: 130%;
+}
+.BannerImage{
+  width: 232px;
+}
+/*************** navigation ***************/
+.navImage{
+  height: 25px;
+}
+/***********These nav bar links are only visible in desktop size ********/
+/****  (in mobile, they're accessible thru hamburger menu)***************/
+#comicsNav{
+  display:none;
+}
+#multimediaNav{
+  display:none;
+}
+#aboutNav{
+  display:none;
+}
+/*************** Rules for Swapping images of desktop naviation links on hover ***************/
+#comicsNav:hover{
+  background-image: url(png_images/comics_nav_underline300.png);
+}
+#comicsNav:active{
+  background-image: url(png_images/comics_nav_underline300.png);
+}
+#multimediaNav:hover{
+  background-image: url(png_images/multimedia_nav_underline600.png);
+}
+#multimediaNav:active{
+  background-image: url(png_images/multimedia_nav_underline600.png);
+}
+#aboutNav:hover{
+  background-image: url(png_images/about_nav_underlined_300.png);
+}
+#aboutNav:active{
+  background-image: url(png_images/about_nav_underlined_300.png);
+}
+/*************** General Navbar text link rules ***************/
+.navLink:visited {
+  color: #7A3458;
+}
+.navLink:active {
+  color: #491F35;
+  text-decoration: none;
+}
+/********** Hamburger Menu *******************************************************************/
+/*************** At mobile breakpoint, position of Burger toggler moves, *******/
+/***so two there are two different togglers that are never displayed at the same time. *******/
+#burgerDesktop{
+  display:none; /**not displayed for mobile**/
+}
+#burgerMobile{
+  padding:0.25rem; /**displayed for mobile**/
+}
+/*************** Rules for burger icon, size etc. *******/
+.navbar.navbar-1 .navbar-toggler-icon {
+    background-image: url('png_images/burger_expanded_color_300.png');
+}
+#burgerIcon{
+  width:34px;
+  height:34px;
+}
+.burgerDropDownIcon{
+width:30px;
+}
+/*************** Rules for Dropdown Menu content *******/
+#dropDownMenuTitle{
+  font-size: 110%;
+  font-family: 'Cabin Sketch', cursive;
+}
+a.dropdown-item{
+  font-size: 90%;
+  font-family: 'Lato', sans-serif;
+  color: #7A3458;
+  text-decoration: none;
+}
+.dropdown .btn{
+  padding: 0.2rem;
+}
+.dropdown .btn-secondary .dropdown-toggle {
+  background-color: #fff;
+}
+.tempTextLink{
+  display:block;
+  font-family: 'Walter Turncoat', cursive;
+  color: #7A3458;
+}
+/*************** Hamburger menu text link rules ***************/
+.tempText:visited{
+    color: #7A3458;
+    text-decoration: none;
+}
+.tempTextLink:active{
+  color: #7A3458;
+  text-decoration: none;
+}
+/************************************************  END OF Header + Navigation  ******************************************************************/
+
+/*************************************************** PAGE CONTENT*******************************************************************************/
+/*************Current Project content*************************/
+#currentProject {
+  margin: 2%;
+  padding: 1%;
+  width: 96%;
+  background-color: #f7f0e8;
+  text-align: center;
+  font-size: 100%;
+}
+#currentProjectImage {
+  width: 100%;
+}
+/*************Above the fold content*************************/
+#projectTitle{
+display: block;
+text-align:center;
+margin: 2%;
+padding: 1%;
+}
+#projectTitleDesktop{
+display: none;
+}
+/*************General content (updates, Fake ads etc.)*************************/
+.content {
+  margin: 2%;
+  padding: 1%;
+  width: 96%;
+  background-color: lightblue;
+  font-size: 70%;
+  overflow: auto;
+  float:left;
+  text-align: center;
+}
+
+/***************  FOOTER   *****************/
+
+footer {
+  /* Apperance */
+  text-align: center;
+  margin:auto;
+}
+#copyright {
+  font-size: 30%;
+  display:block;
+}
+#mailLink {
+display:block;
+  font-size: 30%;
+}
+#copyrightImage {
+  height: 30px;
+}
+#mailLinkImage {
+  height: 30px;
+}
+
+/***********************************************************************************************************************/
+#carouselSizerBox{
+  padding: 5%;
+  width: 100%;
+}
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .carousel-item {
+    transition: none;
+  }
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/***********************************************************************************************************************/
+/***********MEDIA QUERIES FOR DESKTOP DESIGN (BREAK POINT AT 600 PIXELS)**************/
+@media (min-width: 600px) {
+  .BannerImage{
+    width: 300px;
+  }
+  .navImage{
+    height: 35px;
+  }
+  .tempTextLink{
+    display:none; /*since nav-bar elts visible, text links disappear from dropdown menu.*/
+  }
+  #burgerMobile{
+    display:none; /*mobile burger icon not visible in desktop*/
+  }
+  #burgerDesktop{
+    display:inline;
+  }
+  /******************Rules for nav-bar elts that only appear in desktop version********************************/
+  #comicsNav{
+    display: inline;
+    background-image: url(png_images/comics_nav_plain_300.png);
+    background-position: center;
+    background-size: 130px;
+    background-repeat: no-repeat;
+  }
+  #multimediaNav{
+    display: inline;
+    background-image: url(png_images/multimedia_nav_plain600.png);
+    background-position: center;
+    background-size: 160px;
+    background-repeat: no-repeat;
+
+  }
+  #aboutNav{
+    display: inline;
+    background-image: url(png_images/about_nav_plain_300.png);
+    background-position: center;
+    background-size: 130px;
+    background-repeat: no-repeat;
+  }
+#projectTitle{
+  display:none; /*mobile title not visible in desktop*/
+}
+#projectTitleDesktop{
+  display: block;
+  text-align:center;
+  margin: 2%;
+  padding: 1%;
+}
+}/*end of media query*/
