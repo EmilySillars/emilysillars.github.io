@@ -141,6 +141,21 @@ a.dropdown-item{
 /************************************************  END OF Header + Navigation  ******************************************************************/
 
 /*************************************************** PAGE CONTENT*******************************************************************************/
+/*.centerText{
+  text-align:center;
+}
+*/
+
+.question{
+  font-weight: bold;
+font-style: italic;
+}
+.projectDescription{
+  font-size: 1.10rem;
+/*  background-color: white;*/
+ /* text-align:left;*/
+}
+
 /*************Current Project content*************************/
 #currentProject {
   margin: 2%;
@@ -169,7 +184,8 @@ display: none;
   padding: 1%;
   width: 96%;
   background-color: lightblue;
-  font-size: 70%;
+  font-size: 1rem;
+  /*font-size: 70%;*/
   overflow: auto;
   float:left;
   text-align: center;

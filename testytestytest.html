@@ -1,0 +1,169 @@
+<!--/*
+* Author: Emily Sillars
+* Description: Emily's contributions to research at Columbia
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <title>Emily Sillars</title>
+  <meta name="author" content="Emily Sillars" />
+  <meta name="description" content="Emily Sillars's Homepage." />
+  <!-- Prevent smartphones from scaling pages down -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--custom style sheets-->
+  <link href="research.css" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Concert+One|Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Walter+Turncoat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVIAGATION ------------------------------------------------------------------------------------------------------------------------------>
+  <!--Navbar-->
+  <nav class="navbar navbar-light navbar-1 white">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="index.html">
+      <img class ="BannerImage" src="png_images/nameBanner_300.png" srcset="png_images/nameBanner_600.png 2x" alt="Emily Sillars logo here!." /></a>
+    <!-- Collapse button for mobile-->
+    <button id="burgerMobile" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <!--Nav Bar links, visible in Desktop size only (otherwise in hamburger menu) -->
+    <a id="comicsNav" class="nav-link nav-item " href="https://emilysillars.tumblr.com/comics2" target = "blank">
+          <img class ="navImage" src="png_images/comics_nav_blank300.png"
+          srcset="png_images/comics_nav_blank300.png 2x" alt="Link to comics page here" /></a>
+
+    <a id="multimediaNav" class="nav-link nav-item " href="multimedia.html">
+          <img class ="navImage" src="png_images/multimedia_nav_blank300.png"
+          srcset="png_images/multimedia_nav_blank300.png 2x" alt="Link to multimedia projects here" /></a>
+
+    <a id="aboutNav" class="nav-link nav-item " href="about.html">
+          <img class ="navImage" src="png_images/about_nav_blank_300.png"
+          srcset="png_images/about_nav_blank_300.png 2x" alt="Link to about page here" /></a>
+
+    <!-- Collapse button for desktop-->
+    <button id="burgerDesktop" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15" aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <!-- These links disappear at desktop size -->
+        <a class="nav-item center tempTextLink" href="comics.html">
+            Comics</a>
+        <a class="nav-item center tempTextLink" href="multimedia.html">
+            Multimedia</a>
+        <a class="nav-item center tempTextLink" href="about.html">
+            About</a>
+        <!-- These links remain at all sizes -->
+        <li class="nav-item active center">
+          <a id="dropDownMenuTitle" class="nav-link" href="#">Hamburger Menu!<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item center">
+          <a class="nav-link" href="burger.html"><img class = "burgerDropDownIcon"
+                  src="png_images/cheeseBurger1_300.png"
+                  srcset="png_images/cheeseBurger1_300.png" alt="large burger." /> Large Burger $4.</a>
+        </li>
+        <li class="nav-item center">
+          <a class="nav-link" href="burgerBlue.html"><img class = "burgerDropDownIcon"
+                  src="png_images/cheeseBurger2_300.png"
+                  srcset="png_images/cheeseBurger2_300.png" alt="blue burger." /> Blue burger $2.</a>
+        </li>
+      </ul>
+    </div>
+    <!-- End of Collapsible content -->
+  </nav>
+  <!--/.Navbar-->
+  <!-- END  OF NAVIAGATION ------------------------------------------------------------------------------------------------------------------------------>
+  <!-- PAGE CONTENT --------------------------------------------------------------------------------------------------------------------------->
+  <div class="container-fluid">
+    <div class="container carousel">
+</div>
+  <div class = "container-fluid">
+    <div class="row">
+
+      <div class="col-sm">
+
+        <!--- TITLE OF PROJECT -->
+        <h2 id = "projectTitleDesktop">Compilers Research</h2>
+        <!--Project Description------------------------------------------------------->
+        <div class="content">
+          <h5 class="card-title">SSLANG (Sparse, Synchronous Language)</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Fall 2021 - Present</h6>
+          <div class="centerText" >
+          <div class = "projectDescription">
+          <p class="card-text">
+            <a href="https://github.com/ssm-lang/sslang" target = "_blank">SSLANG</a> is a real-time, functional programming language with deterministic concurrency created by <a href="http://www.cs.columbia.edu/~sedwards/" target = "_blank">Stephen Edwards</a> and <a href="https://j-hui.com/" target = "_blank">John Hui</a>. <br />As a member of Edwards' and Hui's research team, I contribute to the development <br />of the SSLANG compiler (written in Haskell) and runtime system (written in C).</p>
+          </div>
+          </div>
+
+
+          <!--  <p><strong><a class = "navLink" href = "animation.html">** Check out some animated sprites currently in development here! **</a><strong></p> -->
+        </div>
+        <!--End of description-------------------------------------------------------------------------------------------------------------->
+        <!--Fall 2021 ------------------------------------------------------->
+          <div id = "download"class="content">
+        <h5 class="card-title">Adding Algebraic Data Types to the SSLANG Compiler</h5>
+        <div class = "projectDescription, card-text">
+          <p>My first semester, I added algebraic data types to the code generation phase of the compiler, and contributed to design decisions regarding the representation of ADTs in the runtime system. <span class="question">How should user defined types be represented in C, and what are the tradeoffs of different kinds of representations? Which kinds of user defined types should be boxed? Should all of them be boxed? </span></p>
+          <p>My Fall 2021 SSLANG Research Report details my work in this area and eventual conclusions. </p>
+          <a href="pdfs/Algebraic_Data_Types_in_SSLANG.pdf" class = "card-link" target = "blank">Research Report Fall 2021</a>
+        </div>
+      </div>
+        <!--END OF Fall 2021------------------------------------------------------->
+         <!--Spring 2022 ------------------------------------------------------->
+          <div id = "download"class="content">
+        <h5 class="card-title">Handling some ADT Edge Cases + Updating the SSLANG Pretty Printer</h5>
+        <div class = "projectDescription, card-text">
+          <p>My second semester research project focused slightly more on compiler engineering, namely, how ADTs were represented internally in our compiler. At the time, data constructors were represented as flat; they could not be partially applied. This limitation was a product of incremental engineering, and was finally ready to be dealt with. <span class="question">Now that we have basic ADTs working, how can we add partial application of data constructors? Given that we already have closures and partial applications working for functions, perhaps we could reuse those facilities for ADTs? What is the difference between a data constructor and a function? Why are they treated differently in our compiler, and at what point could their representations become synonymous?</span> </p>
+          <p>I detail the thought process behind my answers to these questions in my Spring 2022 SSLANG Research Report, as well as summarize other additions to the compiler like my enhancement of our IR pretty printer.</p>
+          <a href="pdfs/SSLANG_Algebraic_Data_Types_and_Beyond.pdf" class = "card-link" target = "blank">Research Report Spring 2022</a>
+           </div>
+      </div>
+        <!--END OF Spring 2022------------------------------------------------------->
+         <!--Fall 2022 ------------------------------------------------------->
+          <div id = "download"class="content">
+             <h5 class="card-title">Adding an Inlining Optimization Pass to the SSLANG Compiler</h5>
+            <div class = "projectDescription, card-text">
+        <p>This semester, I switched gears from adding language constructs to the compiler, to optimizing our internal representation of programs through static inlining. Inlining in functional languages is a well explored subject, so I’m investigating questions like, <span class="question">What did other people do? Why do they do it that way? How can we cherry pick relevant pieces from existing work to create an inlining pass specialized for SSLANG? </span></p>
+        <p>I’ve had the opportunity to pair up with another SSLANG team member for close reading of GHC’s inlining papers and code, and together we’ve designed and are currently coding up our own inlining optimization pass for SSLANG.</p>
+          <a href="pdfs/some_static_inlining_notes.pdf" class = "card-link" target = "blank">In-Progress Research Notes Fall 2022</a>
+           </div>
+      </div>
+         <div id = "download"class="content">
+             <h5 class="card-title">Supervising New Team Member Research Projects</h5>
+            <div class = "projectDescription, card-text">
+        <p>In addition to working on my own research project this fall, I’ve had the opportunity to supervise the research projects of four new SSLANG team members. Each arrived with varying degrees of experience in Haskell and compilers, and it’s been such a pleasure to work with them! </p><p>Three of these students worked on adding tuples, string literals, and list literals to the front end of the compiler, while the third student worked on an optimization pass for our reference counting, Perceus-esque memory manager. </p>
+        <p>Some of the questions I asked myself as a supervisor: <span class="question">What are the best ways to introduce new students to SSLANG and its under-development compiler/evolving documentation? <a href="https://github.com/ssm-lang/sslang/blob/main/doc/compile-build-run-cheatsheet.md" target = "blank">What documentation can I create</a> that might help these students get familiar with the SSLANG compiler and <a href="https://github.com/ssm-lang/sslang/blob/main/doc/lang-design/lowering-example.md" target = "blank">how it works</a>? How can I help my team members break their tasks into smaller, more incremental pieces so they can better achieve results? How can I help students balance conceptual/reading-research-paper tasks with actual SSLANG compiler coding, the latter of which is the ultimate goal? </span></p>
+        <p><a href="#" class = "card-link" target = "blank">Will link these students’ research reports as they become available :)</a></p>
+           </div>
+      </div>
+        <!--END OF Fall 2022------------------------------------------------------->
+    </div>
+      </div>
+  </div>
+  </div>
+  <!---ANIMATED SPRITES----------------------------------------------------->
+
+  <!---ANIMATED SPRITES END----------------------------------------------------->
+  <!--  FOOTER   ----------------------------------------------------->
+  <div class="navbar navbar-light footer">
+    <!-- Content here -->
+    <footer>
+      <div id="copyright" class="center"><img id="copyrightImage" src="png_images/copyright_footer300.png" srcset="png_images/copyright_footer300.png 2x" alt="copyright 2022 Emily Sillars." />
+      </div>
+      <a id="mailLink" class="center" style="color: #AD3975; " href="mailto:ems2331@columbia.edu">
+    <img id = "mailLinkImage" src="png_images/sayHello_plain300.png" srcset="png_images/sayHello_plain300.png 2x" alt="Say Hello!" />
+     </a>
+    </footer>
+  </div>
+  <!--  END OF FOOTER   ----------------------------------------------------->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--^make sure the links ARE IN THIS PARTICULAR ORDER! OTHERWISE, will get errors! -->
+  </div>
+</body>
+</html>
