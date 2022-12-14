@@ -34,8 +34,10 @@
   margin-right: auto;
 }
 /***************************        Body      *************************************************/
-body {
-  background-color:white;
+body{
+  background-image: url(png_images/lambda_tiles4_gray.png);
+  background-size: 10%;
+  background-repeat:repeat;
 }
 /************************************************  Header  ******************************************************************/
 .navbar{
@@ -174,9 +176,14 @@ display: block;
 text-align:center;
 margin: 2%;
 padding: 1%;
+background-color: lightblue;
 }
 #projectTitleDesktop{
 display: none;
+}
+mark { 
+  background-color: white;
+  color: #7A3458;
 }
 /*************General content (updates, Fake ads etc.)*************************/
 .content {
