@@ -296,6 +296,9 @@ a.dropdown-item{
 .half{
   width: 45%;
 }
+.threeQuarters{
+  width: 85%;
+}
 #dogText{
   font-size: 120;
   width: 45%;
@@ -303,6 +306,10 @@ a.dropdown-item{
 #animationAd{
   padding: 5%;
   font-size: 150%;
+}
+#buclesAd{
+  padding: 5%;
+  background-color: white;
 }
 /******************************************************************************/
 /********************* Rain Button Rules **************************************/
